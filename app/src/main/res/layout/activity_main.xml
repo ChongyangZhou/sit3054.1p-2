@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:text="Task list"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_marginRight="20dp"
+                android:id="@+id/add_richeng"
+                android:src="@drawable/richeng_add"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <View
+                android:background="@color/purple_200"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <ListView
+                android:id="@+id/list_plan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#ffffff" />
+        </RelativeLayout>
+</LinearLayout>
